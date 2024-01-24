@@ -40,4 +40,14 @@ export class UserService {
     }
     return isMatch;
   }
+
+  public forUser() {
+    let url = this.BASE_URL + Endpoints.FOR_USER;
+    return this.httpclient.get(url, { responseType: 'text' });
+  }
+
+  public forAdmin() {
+    let url = this.BASE_URL + Endpoints.FOR_ADMIN;
+    return this.httpclient.get(url, { responseType: 'text' });
+  }
 }
