@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "trishopui": {
+    "uiAuthenticationTemplate": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/trishopui",
+            "outputPath": "dist/uiAuthenticationTemplate",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -66,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "trishopui:build:production"
+              "buildTarget": "uiAuthenticationTemplate:build:production"
             },
             "development": {
-              "buildTarget": "trishopui:build:development"
+              "buildTarget": "uiAuthenticationTemplate:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -77,7 +77,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "trishopui:build"
+            "buildTarget": "uiAuthenticationTemplate:build"
           }
         },
         "test": {
